@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip - AI Virtual Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <strong>BST</strong>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore Map</a></li>
+                <li><a href="plan.html" class="active">Plan Trip</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+            <div class="user-auth">
+                <button>Login / Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-header">
+            <h1>Plan Your Perfect Journey</h1>
+            <p>AI-powered itinerary planning with personalized recommendations</p>
+        </section>
+
+        <section class="planning-section">
+            <div class="planning-form">
+                <h2>Tell Us About Your Trip</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Travel Dates</label>
+                        <div class="date-inputs">
+                            <input type="date" placeholder="Start Date">
+                            <input type="date" placeholder="End Date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Travelers</label>
+                        <input type="number" value="0" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interests (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Culture & Heritage</label>
+                            <label><input type="checkbox"> Adventure & Trekking</label>
+                            <label><input type="checkbox"> Wellness & Meditation</label>
+                            <label><input type="checkbox"> Photography</label>
+                            <label><input type="checkbox"> Local Cuisine</label>
+                            <label><input type="checkbox"> Rural Tourism</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Budget Range (USD per day)</label>
+                        <select>
+                            <option>$200 - $300</option>
+                            <option>$300 - $500</option>
+                            <option>$500 - $1000</option>
+                            <option>$1000+</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="button-large">Generate AI Itinerary</button>
+                </form>
+            </div>
+
+            <div class="ai-suggestions">
+                <h2>AI Recommendations</h2>
+                <div class="suggestion-box">
+                    <h3>Suggested Itinerary</h3>
+                    <div class="itinerary-day">
+                        <strong>Day 1:</strong> Arrival in Paro → Tiger's Nest Monastery
+                    </div>
+                    <div class="itinerary-day">
+                        <strong>Day 2:</strong> Paro to Thimphu → Buddha Dordenma
+                    </div>
+                    <div class="itinerary-day">
+                        <strong>Day 3:</strong> Thimphu to Punakha → Punakha Dzong
+                    </div>
+                    <div class="itinerary-day">
+                        <strong>Day 4:</strong> Punakha Valley Exploration
+                    </div>
+                    <div class="itinerary-day">
+                        <strong>Day 5:</strong> Return to Paro → Departure
+                    </div>
+                </div>
+
+                <div class="suggestion-box">
+                    <h3>Travel Tips</h3>
+                    <ul>
+                        <li>Best time to visit: March-May, September-November</li>
+                        <li>Sustainable Development Fee: $100/day included</li>
+                        <li>Respect local customs and dress modestly at religious sites</li>
+                        <li>Altitude acclimatization recommended for high-altitude treks</li>
+                    </ul>
+                </div>
+
+                <div class="suggestion-box">
+                    <h3>Booking Assistance</h3>
+                    <button class="button">Find Hotels</button>
+                    <button class="button">Book Transport</button>
+                    <button class="button">Hire Guide</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Travel Dashboard-->
+        <section id="travel-dashboard" class="travel-dashboard clean-ui" aria-labelledby="td-title">
+        <div class="td-header">
+            <h2 id="td-title">Travel Dashboard</h2>
+            <p class="td-sub">Snapshot of your itinerary, bookings, upcoming activities and budget.</p>
+        </div>
+
+        <div class="td-grid">
+            <div class="td-card td-itinerary">
+            <div class="td-card-head">
+                <h3>Itinerary</h3>
+                <span class="td-pill">3 days</span>
+            </div>
+            <ol class="td-list">
+                <li><strong>Day 1</strong> — Paro: Arrival & transfer</li>
+                <li><strong>Day 2</strong> — Paro: Tiger's Nest hike</li>
+                <li><strong>Day 3</strong> — Thimphu: City tour</li>
+            </ol>
+            <a class="td-link" href="#">View full itinerary →</a>
+            </div>
+
+            <div class="td-card td-bookings">
+            <div class="td-card-head">
+                <h3>Bookings</h3>
+                <span class="td-muted">2 items</span>
+            </div>
+            <div class="td-list-compact">
+                <div class="td-row">
+                <div>
+                    <div class="td-row-title">Mountain View Lodge</div>
+                    <div class="td-muted small">Thimphu — 2 nights</div>
+                </div>
+                <div class="td-status confirmed">Confirmed</div>
+                </div>
+
+                <div class="td-row">
+                <div>
+                    <div class="td-row-title">Private transfer</div>
+                    <div class="td-muted small">Paro → Thimphu</div>
+                </div>
+                <div class="td-status pending">Pending</div>
+                </div>
+            </div>
+            <a class="td-link" href="#">Manage bookings →</a>
+            </div>
+
+            <div class="td-card td-activities">
+            <div class="td-card-head">
+                <h3>Upcoming</h3>
+                <span class="td-muted">2 events</span>
+            </div>
+            <ul class="td-mini-list">
+                <li><strong>Tomorrow, 6:00 PM</strong> — Cultural performance (Punakha)</li>
+                <li><strong>In 3 days</strong> — Weaving workshop (limited seats)</li>
+            </ul>
+            <a class="td-link" href="#">Manage activities →</a>
+            </div>
+
+            <div class="td-card td-budget">
+            <div class="td-card-head">
+                <h3>Budget</h3>
+                <span class="td-muted">Status</span>
+            </div>
+            <div class="td-budget-row">
+                <div class="td-budget-info">
+                <div class="td-small-muted">Planned</div>
+                <div class="td-strong">$1,200</div>
+                </div>
+                <div class="td-budget-info">
+                <div class="td-small-muted">Spent</div>
+                <div class="td-strong">$450</div>
+                </div>
+                <div class="td-budget-info">
+                <div class="td-small-muted">Remaining</div>
+                <div class="td-strong">$750</div>
+                </div>
+            </div>
+
+            <div class="td-progress">
+                <div class="td-progress-track">
+                <div class="td-progress-fill" style="width:38%"></div>
+                </div>
+                <div class="td-progress-meta small td-muted">38% used</div>
+            </div>
+
+            <a class="td-link" href="#">Update expenses →</a>
+            </div>
+        </div>
+
+        <div class="td-actions">
+            <button class="button">Add Booking</button>
+            <button class="button">Share</button>
+            <button class="button">Download</button>
+        </div>
+        </section>
+        <!-- -->
+
+    </main>
+
+    <div class="chatbot-fab">
+        <button title="Chat with AI Guide">AI</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Map</a>
+                <a href="plan.html">Plan Trip</a>
+                <a href="stories.html">Stories</a>
+                <a href="booking.html">Booking</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Tourism Policy</a>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <p>contact@bst.bt</p>
+                <p>Tourism Council of Bhutan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bhutan Smart Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

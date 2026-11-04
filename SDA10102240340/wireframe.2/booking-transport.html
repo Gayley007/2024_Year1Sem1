@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transport Booking - Bhutan Smart Tourism</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><strong>BST</strong></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore Map</a></li>
+        <li><a href="plan.html">Plan Trip</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <div class="user-auth"><button type="button">Login / Sign Up</button></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <h1>Transport Booking</h1>
+      <p>Choose vehicle type and schedule transfers for your trip.</p>
+    </section>
+
+    <section class="transport-search">
+      <form class="booking-form" action="#" method="GET" aria-label="Transport search (visual)">
+        <div class="grid-3">
+          <label>Pickup
+            <input type="search" name="pickup" placeholder="Paro Airport, Hotel..." />
+          </label>
+          <label>Drop-off
+            <input type="search" name="dropoff" placeholder="Punakha Dzong..." />
+          </label>
+          <label>Date
+            <input type="date" name="ride_date" />
+          </label>
+        </div>
+
+        <div class="grid-3">
+          <label>Passengers
+            <input type="number" name="passengers" min="1" value="1" />
+          </label>
+          <label>Vehicle type
+            <select name="vehicle">
+              <option value="taxi">Taxi — Private</option>
+              <option value="shared">Shared Ride</option>
+              <option value="van">Van — Group</option>
+            </select>
+          </label>
+          <button type="submit" class="button">Check & Book</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="transport-results">
+      <h2>Available Vehicles (visual)</h2>
+
+      <div class="vehicle-grid">
+        <article class="vehicle-card">
+          <div class="vehicle-icon">🚗</div>
+          <div>
+            <h3>Private Car</h3>
+            <div class="muted small">Good for 1–3 passengers</div>
+            <p class="muted">Driver included, door-to-door transfer.</p>
+            <div class="hotel-meta">
+              <div class="price">15$</div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicle-card">
+          <div class="vehicle-icon">🚐</div>
+          <div>
+            <h3>Shared Van</h3>
+            <div class="muted small">Good for 4–8 passengers</div>
+            <p class="muted">Lower cost per person, scheduled pickups.</p>
+            <div class="hotel-meta">
+              <div class="price">5$ / person</div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicle-card">
+          <div class="vehicle-icon">🛻</div>
+          <div>
+            <h3>Group Van</h3>
+            <div class="muted small">Good for 8–12 passengers</div>
+            <p class="muted">Ideal for larger groups & long transfers.</p>
+            <div class="hotel-meta">
+              <div class="price">35$</div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-cta">
+      <a href="booking.html" class="button">← Back to Booking</a>
+      <a href="plan.html" class="button">Add to Plan →</a>
+    </section>
+  </main>
+
+  <div class="chatbot-fab"><button title="Chat with AI Guide">AI</button></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore Map</a>
+        <a href="plan.html">Plan Trip</a>
+        <a href="stories.html">Stories</a>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Tourism Policy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <p>contact@bst.bt</p>
+        <p>Tourism Council of Bhutan</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Bhutan Smart Tourism. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>

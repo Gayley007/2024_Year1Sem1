@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hotel Booking - Bhutan Smart Tourism</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><strong>BST</strong></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore Map</a></li>
+        <li><a href="plan.html">Plan Trip</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <div class="user-auth"><button type="button">Login / Sign Up</button></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <h1>Hotel Booking</h1>
+      <p>Find hotels by destination, dates, price and rating.</p>
+    </section>
+
+    <section class="hotel-search">
+      <form class="booking-form" action="#" method="GET" aria-label="Hotel search (visual)">
+        <div class="grid-3">
+          <label>Destination
+            <input type="search" name="hotel_location" placeholder="Paro, Thimphu..." />
+          </label>
+          <label>Check-in
+            <input type="date" name="checkin" />
+          </label>
+          <label>Check-out
+            <input type="date" name="checkout" />
+          </label>
+        </div>
+
+        <div class="grid-3">
+          <label>Guests
+            <input type="number" name="guests" min="1" value="1" />
+          </label>
+          <label>Price range
+            <select name="hotel_price">
+              <option value="">Any</option>
+              <option value="budget">Budget</option>
+              <option value="mid">Mid-range</option>
+              <option value="lux">Luxury</option>
+            </select>
+          </label>
+          <button type="submit" class="button">Search Hotels</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="hotel-results">
+      <h2>Sample Results (visual)</h2>
+
+      <div class="hotel-grid">
+        <article class="hotel-card">
+          <div class="hotel-thumb placeholder-img">🏔️</div>
+          <div class="hotel-body">
+            <h3>Bumthang Mountain Lodge</h3>
+            <div class="muted small">Bumthang • 4 ★ • 2 nights</div>
+            <p class="muted">Comfortable rooms, great valley views and local breakfast.</p>
+            <div class="hotel-meta">
+              <div class="price">From <strong>$100 / night</strong></div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <div class="hotel-thumb placeholder-img">🏯</div>
+          <div class="hotel-body">
+            <h3>Namgay Heritage Hotel</h3>
+            <div class="muted small">Thimphu • 4.3 ★ • 3 nights</div>
+            <p class="muted">Traditional architecture, great cultural experience.</p>
+            <div class="hotel-meta">
+              <div class="price">From <strong>$75 / night</strong></div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <div class="hotel-thumb placeholder-img">🏕️</div>
+          <div class="hotel-body">
+            <h3>Tenzinling Luxury Villa Tents</h3>
+            <div class="muted small">Paro • 4.8 ★ • 1 night</div>
+            <p class="muted">country’s first high-end glamping retreat.</p>
+            <div class="hotel-meta">
+              <div class="price">From <strong>$130 / night</strong></div>
+              <div><a href="#" class="button">Book</a></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-cta">
+      <a href="booking.html" class="button">← Back to Booking</a>
+      <a href="plan.html" class="button">Add to Plan →</a>
+    </section>
+  </main>
+
+  <div class="chatbot-fab"><button title="Chat with AI Guide">AI</button></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore Map</a>
+        <a href="plan.html">Plan Trip</a>
+        <a href="stories.html">Stories</a>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Tourism Policy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <p>contact@bst.bt</p>
+        <p>Tourism Council of Bhutan</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Bhutan Smart Tourism. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>
